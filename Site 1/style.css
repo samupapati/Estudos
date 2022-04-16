@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+html, body{
+    width: 100%; height: 100%;
+}
+
+body{
+    margin: 0; padding: 0;
+}
+
+.container{
+    width: 100%; height: 100%;
+}
+
+.header{
+    display: flex;
+    width: 100%; height: 100%;
+    /*background-color: red;*/
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.links{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00000080;
+    padding: 2% 0%;
+}
+
+.links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.links li{
+    list-style: none;
+    margin: 0px;
+    display: inline;
+}
+
+.links a{
+    padding: 15px 15px;
+    margin: 0;
+    background: transparent;
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.links a:hover{
+    color: white;
+    background-color: #0000007a;
+    transition: 0.5s;
+}
+
+/*.logo{
+
+}*/
+
+.logo .imgLogo{
+    height: 60%;
+    width: 60%;
+}
+
+/*---------------------------------------*/
+
+.main{
+    width: 100%; height:100%;
+    display: flex;
+    background-color: #ffe9e9;
+    flex-wrap: wrap;
+}
+
+    .bloco1{
+        display: flex;
+        width: 100%; height: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        .imgBloco1{
+            width: 45%;
+            height: 100%;
+            padding: 2% 1%;
+            box-sizing: border-box;
+        }
+
+        .imgBloco1 img{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+        }
+
+        .historiaBloco1{
+            width: 50%;
+            height: 100%;
+            padding: 1%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .historiaBloco1 h2{
+            position: relative;
+            margin-top: 0;
+        }
+
+        .historiaBloco1 p{
+            margin-top: 0;
+            text-align: justify;
+        }
+
+    .bloco2{
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.breakLine{
+    width: 100%;
+    height: 2%;
+}
