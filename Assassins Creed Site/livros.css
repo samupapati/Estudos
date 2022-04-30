@@ -119,7 +119,41 @@ h2 div{
 
 
 
-
 .spacePai{
     grid-column: span 2;
 }
+
+
+
+
+
+@media all and (max-width: 600px){
+    .mainLivros{
+        grid-template-columns: 100%;
+    }
+    .contentOrdem{
+        grid-column: span 1;
+    }
+    .ordem{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ordemCronologica, .ordemLancamento{
+        width: 90%;
+    }
+    .ordemLancamento{
+        border: none;
+        margin-top: 3%;
+    }
+    .footer{
+        padding: 2%;
+    }
+    .spacePai{
+        grid-column: span 1;
+        display: none;
+    }
+}
+
+
+
+
