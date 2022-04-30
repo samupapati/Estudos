@@ -4,197 +4,201 @@
     src: url('fonts/Assassin$.ttf');
 }
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-}
-
-.header {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    /*background-color: red;*/
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
+body{
     background-image: url(img/fundo.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
 
-.links{
-    position: fixed; 
+/*Menu*/
+
+.header{
+    position: sticky;
     top: 0;
+}
+
+.links{
+    background-color: black;
     width: 100%;
-    background-color: #00000080;
-    padding: 2% 0%;
+    box-shadow: 0px 0px 5px black;
+    position: sticky;
+    top: 0;
 }
 
-.links ul {
-    margin: 0;
-    padding: 0;
-}
-
-.links li {
-    list-style: none;
-    margin: 0px;
-    display: inline;
-}
-
-.links a {
-    padding: 15px 15px;
-    margin: 0;
-    background: transparent;
-    text-decoration: none;
-    color: #e4e4e4;
-    font-family: 'Assassins';
-    font-size: 22px;
-}
-
-.links a:hover {
-    color: white;
-    background-color: #0000007a;
-    transition: 0.5s;
-}
-
-
-/*.logo{
-
-}*/
-
-.logo .imgLogo {
-    height: 60%;
-    width: 60%;
-}
-
-
-/*---------------------------------------*/
-
-.main {
-    width: 100%;
-    height: 100%;
+.links ul{
+    list-style-type: none;
     display: flex;
-    background-color: #ffffff;
-    flex-wrap: wrap;
-}
-
-.bloco1 {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.imgBloco1 {
-    width: 45%;
-    height: 100%;
-    padding: 2% 1%;
-    box-sizing: border-box;
-}
-
-.imgBloco1 img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
-}
-
-.historiaBloco1 {
-    width: 50%;
-    height: 100%;
-    padding: 1%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
-.historiaBloco1 h2 {
-    position: relative;
-    margin-top: 0;
+.links li{
+    margin: 9px 0px;
 }
 
-.historiaBloco1 p {
-    margin-top: 0;
-    text-align: justify;
+.links a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Assassins';
+    padding: 10px 10px;
+    text-decoration: underline;
+    text-decoration-color: #e40000;
+}
+
+.links a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*Imagem de Apresentação*/
+
+.divImgPrincipal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.escurecer{
+    background-color: #000000a8;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.divImgPrincipal img{
+    margin-top: 15vh;
+    width: 70%;
+    height: 70%;
+    object-fit:contain;
 }
 
 /*----------------------------------------------------------------------------*/
+/*main*/
 
-.bloco2 {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main{
+    margin: 0em 2em;
 }
 
-/*.bloco2 img{
-
-}*/
-
-.info{
-    font-size: 11.5px;
+.main h2{
+    font-size: 30px;
 }
 
-.info::before{
-    content: 'ℹ️';
-    color: gray;
+.main p{
+    font-size: 19px;
 }
 
-.breakLine {
-    width: 100%;
-    height: 2%;
-}
 
 /*-----------------------------------*/
-.jogos{
+/*Bloco 1*/
+
+.bloco1{
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.imgBloco1{
+    width: 50%;
+    height: 40vh;
+    padding: 0.5%;
+}
+
+.imgBloco1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.historiaBloco1{
+    width: 50%;
+    text-align: justify;
+}
+
+.historiaBloco1 h2{
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+.historiaBloco1 p{
+    margin: 2% 0 0 0;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Bloco 2*/
+.bloco2{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    backdrop-filter: blur(100px);
+    text-align: center;
+    background-color: white;
 }
 
-.jogos section{
-    background-color: rgb(250, 250, 250);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.125);
-    border-radius: 3px;
-    width: 60%;
+/*                            franquias                                      */
+
+.franquias{
+    margin-top: 5%;
     padding: 2%;
 }
 
-.jogos section:hover{
-    width: 70%;
-    transition: 0.8s;
-    font-size: 110%;
+.franquias .info{
+    font-size: 12px;
+    margin-top: 1%;
 }
 
-.jogos img{
-    width: 50%;
-    border-radius: 1.5px;
-    box-shadow: 0px 0px 5px rgba(134, 134, 134, 0.5);
-    margin-top: 2%;
+.franquias h2{
+    margin: 0 0 1.5% 0;
+}
+
+.franquias p{
+    margin: 1.5% 0 2% 0;
+}
+/*                            jogos                                                       */
+.jogos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogos h2{
+    margin: 1% 0 3% 0;
 }
 
 .jogos p{
     text-align: justify;
-    font-size: 100%;
+    margin: 1% 0 5% 0;
+}
+
+.jogos img{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5em #00000081;
+}
+
+.odyssey, .origins, .valhalla, .ac1, .ac2, .broterhood, .revelations, .blackFlag, .rogue, .ac3, .liberation, .unity, .syndicate{
+    width: 70%;
+    padding: 2%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 13%);
+    background-color: #fafafa;
 }
 
 
@@ -256,16 +260,66 @@ footer p{
     color: rgb(172, 172, 172);
 }
 
-/*SCROLL -----------------------------------------------------------------------------*/
-::-webkit-scrollbar{
-    width: 10px;
+@media all and (max-width: 768px){
+    .main{
+        margin: 0;
+    }
+
+
+
+
+    .bloco1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgBloco1{
+        width: 100%; 
+        height: 50vh;
+        margin-bottom: 1%;
+    }
+
+    .imgBloco1 img{
+        width: 50%;
+        height: 100%;
+    
+        object-fit: cover;
+    }
+
+    .historiaBloco1{
+        width: 100%;
+        order: -1;
+    }
+
+    .historiaBloco1 h2{
+        margin: 1.5%;
+    }
+
+    .historiaBloco1 p{
+        margin: 1%;
+    }
+
+
+
+
+    .odyssey, .origins, .valhalla, .ac1, .ac2, .broterhood, .revelations, .blackFlag, .rogue, .ac3, .liberation, .unity, .syndicate{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+} 
+
+
+
+.odyssey span, .origins span{
+    color: goldenrod;
+    letter-spacing: 3px;
 }
 
-::-webkit-scrollbar-track{
-    background-color: transparent;
+.valhalla span, .ac1 span{
+    letter-spacing: 3px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.363);
-    border-radius: 1.5px;
+.ac1 span, .ac2 span, .broterhood span, .revelations span, .blackFlag span, .rogue span, .ac3 span, .liberation span, .unity span, .syndicate span{
+    color: #cc0000;
 }
