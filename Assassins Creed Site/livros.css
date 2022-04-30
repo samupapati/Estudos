@@ -23,11 +23,6 @@
     align-items: center;
 }
 
-.livro:hover{
-    background-color: #f3f3f3;
-    transition: 0.1s;
-}
-
 .livro span{
     color: #cc0000;
 }
@@ -89,11 +84,6 @@ h2 div{
     padding: 2%;
     border-radius: 3px;
     box-shadow: 0px 0px 5px gray;
-}
-
-.contentOrdem:hover{
-    background-color: #f3f3f3;
-    transition: 0.1s;
 }
 
 .ordem{
