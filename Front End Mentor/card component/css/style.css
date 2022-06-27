@@ -124,6 +124,7 @@ body {
     .bloco2{
         height: 55vh;
         order: -1;
+        background-image: url(../assets/img/image-header-mobile.jpg);
         background-size: cover;
         background-position: top;
         border-radius: 10px;
