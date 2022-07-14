@@ -1,15 +1,12 @@
+let advice = document.getElementById('advice')
 let contConselho = document.getElementById('contConselho') 
 let spanConselho = document.getElementById('spanConselho') 
 let buttonGerar = document.getElementById('buttonGerar') 
 
-document.addEventListener('DOMContentLoaded', () => {
-    spanConselho.span.innerHTML = main()
-})
-
 function main(){
     data = getConselho('https://api.adviceslip.com/advice')
     let conselho = JSON.parse(data)
-    return conselho.slip.advice
+    return conselho
 }
 
 function getConselho(url){
@@ -21,8 +18,12 @@ function getConselho(url){
 }
 
 function criarConselho(){
-    spanConselho.innerHTML = main()
-    contConselho.style.display = 'block'
+    spanConselho.innerHTML = main().slip.advice
+}
+
+function criarId(){
+    advice.innerHTML = 'Advice #' + main().slip.id
 }
 
 buttonGerar.addEventListener('click', criarConselho)
+buttonGerar.addEventListener('click', criarId)
